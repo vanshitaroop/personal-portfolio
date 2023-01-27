@@ -59,6 +59,6 @@ export const Banner = () => {
                 </Row>
             </Container>
         </section>
-
+ 
     )
 }
