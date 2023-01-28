@@ -4,6 +4,7 @@ import { Navbarp } from './components/Navbarp';
 import { Skills } from './components/Skills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Banner} from './components/Banner'
+import { Project } from './components/Project';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbarp/>
       <Banner/>
       <Skills/>
+      <Project/>
     </div>
   );
 }
