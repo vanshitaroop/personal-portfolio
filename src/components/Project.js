@@ -14,6 +14,8 @@ import iNotebook3 from "../assets/img/iNotebook3.png"
 import Nav from 'react-bootstrap/Nav'
 import { ProjectCard } from './ProjectCard'
 import colorSharp2 from "../assets/img/color-sharp2.png"
+import "animate.css"
+import TrackVisibility from "react-on-screen"
 export const Project = () => {
   const newsmonkey = [
     {
@@ -71,7 +73,10 @@ export const Project = () => {
       <Container>
         <Row>
           <Col>
-            <h2 style={{marginBottom:"25px"}}>Projects</h2>
+          <TrackVisibility>
+              {({ isVisible }) =>
+            <h2 style={{marginBottom:"25px"}} className={isVisible?"animate__animated animate__tada":""}>Projects</h2>}
+            </TrackVisibility>
             {/* <p>Loreum ipsum is simply a dummy text of the printing and typesetting industry</p> */}
             <Tab.Container className="projects-tab mb-5" id="projects-tab" defaultActiveKey="first">
             <Nav variant='pills' className="nav-pills mb-5 justify-content-center align-items-center"  >
