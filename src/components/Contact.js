@@ -39,14 +39,14 @@ export const Contact = () => {
                             <Col sm={6} className="px-1">
                                 <input type="text" name='lastName' placeholder="last Name" />
                             </Col>
-                            <Col sm={6} className="px-1">
+                            <Col sm={12} md={12} className="px-1 my-2">
                                 <input type="email" value={formDetails.email} name="mail" placeholder="Email" onChange={(e)=>onFormUpdate('email',e.target.value)} />
                             </Col>
-                            <Col sm={6} className="px-1">
+                            {/* <Col sm={6} className="px-1">
                                 <input type="tel" value={formDetails.phone} name="phone" placeholder="Phone no." onChange={(e)=>onFormUpdate('phone',e.target.value)} />
-                            </Col>
+                            </Col> */}
                             <Col>
-                            <textarea row="6" value={formDetails.message} placeholder="Message" name='msg' onChange={(e)=>onFormUpdate('message',e.target.value)} />
+                            <textarea  className="px-1" row="7" value={formDetails.message} placeholder="Message" name='msg' onChange={(e)=>onFormUpdate('message',e.target.value)} />
                             <button type='submit'> <span>{buttonText}</span> </button>
                             </Col>
                             {

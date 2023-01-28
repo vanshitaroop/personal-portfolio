@@ -2,11 +2,12 @@ import React from 'react'
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState } from 'react';
 import { useEffect } from 'react';
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg"; 
-
+import "animate.css"
+import TrackVisibility from "react-on-screen"
 export const Navbarp = () => {
   const [sccrolled, setsccrolled] = useState("false")
   const [activeLink, setactiveLink] = useState("home");
@@ -31,7 +32,10 @@ export const Navbarp = () => {
       <Navbar expand="md" className={sccrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" />
+        <TrackVisibility>
+              {({ isVisible }) =>
+          <img src={logo}  style={{width:"110px"}} alt="Logo" className={isVisible?"animate__animated animate__backInUp":""}/>}
+          </TrackVisibility>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -44,9 +48,9 @@ export const Navbarp = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.linkedin.com/in/vanshita-roopchandani-5943171b8/?original_referer=https%3A%2F%2Fsidhealthcare.com%2F"><img src={navIcon1} alt="" /></a>
+              <a href="https://www.facebook.com/vanshita.roopchandani/"><img src={navIcon2} alt="" /></a>
+              <a href="https://www.instagram.com/vanshita_roopchandani/"><img src={navIcon3} alt="" /></a>
             </div>
                 <button className="vvd"><span><a  className="test" href="https://www.instagram.com/vanshita_roopchandani/" style={{color:"white"}}>Let’s Connect</a></span></button>
           </span>

@@ -10,8 +10,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["MERN stack Developer", "Web Developer", "Web Designer"];
-  const period = 2000;
+  const toRotate = ["MERN stack Developer", "Web Developer", "Human"];
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -51,7 +51,7 @@ export const Banner = () => {
         <Row className="align-item-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my portfolio</span>
-            <h1> {`Hi I m vanshita A `} <span className="wrap">{text}</span> </h1>
+            <h1> {`Hi I m vanshita, A `} <span className="wrap">{text}</span> </h1>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__wobble" : ""}>

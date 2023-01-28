@@ -82,7 +82,7 @@ export const Project = () => {
             <Nav variant='pills' className="nav-pills mb-5 justify-content-center align-items-center"  >
               <Nav.Item>
                 <Nav.Link eventKey="first">
-                  NewsMonkey
+                  NewsM
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
