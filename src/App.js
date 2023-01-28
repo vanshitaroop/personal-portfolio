@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { Contact } from './components/Contact';
 import './App.css';
 import { Navbarp } from './components/Navbarp';
 import { Skills } from './components/Skills';
@@ -14,6 +14,7 @@ function App() {
       <Banner/>
       <Skills/>
       <Project/>
+      <Contact/>
     </div>
   );
 }
