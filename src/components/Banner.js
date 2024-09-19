@@ -55,8 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__wobble" : ""}>
-                  <p> hey!! this is V from this side I am curently pursuing Btech in Computer science and of course passionate for Web D!! but still in a learning phase
-                    I have done my Internship as a Web Developer From OCCedu soft for the Duration of 4 Months</p>
+                  <p> Hey! This is V. I'm currently working as a MERN stack developer with 2 years of experience, passionate about web development. I have hands-on expertise in AWS services like EC2, S3, Lambda functions, and SES. During my journey, I have delivered efficient and scalable web solutions, and I'm always eager to explore more in the field.</p>
                   <button  style={{ backgroundColor: "transparent", border: "0" }} ><a href="#contact" style={{color:"white"}}>Feedback <ArrowRightCircle size={25} /></a></button>
                 </div>}
             </TrackVisibility>
